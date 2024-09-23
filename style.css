@@ -65,10 +65,15 @@ body {
 .header-topleft {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
-
     align-content: center;
+    padding-left: 70px;
 }
 
+#searchbar {
+    background-color: bisque;
+    border-radius: 10px;
+    height: 20px
+}
 
 .header-topright {
     grid-column: 2 / 3;
@@ -77,11 +82,13 @@ body {
     display: flex;
     justify-content: flex-end;
     gap:5px;
+    padding-right: 70px;
 }
 
 .header-bottomleft {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
+    padding-left: 70px;
 }
 
 .header-bottomright {
@@ -90,11 +97,17 @@ body {
     display: flex;
     justify-content: space-around;
     align-content: center;
+    padding-top: 20px;
+    padding-right: 70px;
 }
 
 .header-bottomright > button {
-    height: 20px;
-    align-self: center;
+    height: 30px;
+    width: 100px;
+    background-color: #1a2e05;
+    color: white;
+    border: none;
+
 }
 
 
