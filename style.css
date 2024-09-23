@@ -1,0 +1,148 @@
+@font-face {
+    font-family: 'IBMPlexMono';
+    font-weight: 300;
+    src: url('assets/fonts/ibmplexmono-light-webfont.woff2') format('woff2'),
+         url('assets/fonts/ibmplexmono-light-webfont.woff') format('woff');
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'IBMPlexMono', sans-serif;
+}
+
+.top-container {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    grid-template-rows: 1fr 7fr;
+    border: dashed red;
+    height: 100vh;
+}
+
+.menu-area {
+    grid-column: 1 / 2 ;
+    grid-row: 1 / 3;
+    height: 100%;
+    background-color: rgb(91, 184, 238);
+    color: white;
+    justify-content: center;
+    border: dashed red;
+}
+
+.menu-item {
+    margin-top: 20px;
+    font-size: larger;
+}
+
+.menu-item > p {
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    margin-left: 20px;
+    font-size: large;
+}
+
+#menu-settings {
+    margin-top: 50px;
+}
+
+.header-area {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    padding: 15px;
+    border: dashed red;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+}
+
+.header-topleft {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    border: dashed turquoise;
+    align-content: center;
+}
+
+
+.header-topright {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    border: dashed turquoise;
+    align-content: center;
+    display: flex;
+    justify-content: flex-end;
+    gap:5px;
+}
+
+.header-bottomleft {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.header-bottomright {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.header-bottomright > button {
+    height: 20px;
+    align-self: center;
+}
+
+
+#profile-icon {
+    grid-column: 1 / 2;
+    height:50px;
+    width: auto;
+    align-self: center;
+}
+
+#name {
+    grid-column: 2 / 3;
+}
+
+.content-area {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    border: dashed red;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-color: rgb(238, 237, 237);
+}
+
+.content-area-left {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 4fr 4fr 4fr;
+    gap: 30px;
+    margin: 30px;
+}
+
+.content-area-left > p {
+    grid-column: 1 / 3;
+}
+
+.content-project {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px -7px rgba(186,194,194,1);
+    padding: 20px;
+}
+
+.content-area-right {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+    margin: 30px;
+}
+
+.content-announcements, .trending {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px -7px rgba(186,194,194,1); 
+    padding: 10px;
+}
